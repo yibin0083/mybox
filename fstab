@@ -1,0 +1,36 @@
+# Device	Mountpoint	FStype	    Options Dump    Pass#
+/dev/ada0s4a	/		ufs	    rw	    1	    1
+/dev/ada1s2a	/mnt/hd01	ufs	    rw	    0	    0
+/dev/ada0s4b	none		swap	    sw	    0	    0
+md99	none	swap	sw,file=/mnt/hd01/swap1,late	0   0
+#/dev/ada1s2b	none		swap	    sw	    0	    0
+# CD DVD	############### ########### ####### #######  ################
+#/dev/acd0	/cdrom	cd9660	ro		    0	    0  
+#/dev/acd0      /cdrom  cd9660  ro,-C=GBK,noauto    0       0
+#mdconfig -a -t vnode -f /mnt/hd04/swap4 -u 99
+# for ALLfs	############### ########### ####### #######  ################
+#tmpfs		/mnt/firefox	tmpfs rw,size=333M  0	    0
+#tmpfs		/tmp		tmpfs	    rw	    0       0
+#tmpfs		/mnt/portfs 	tmpfs rw,size=384M  0       0
+#tmpfs		/mnt/shm    	tmpfs rw,size=4M   0       0
+fdesc		/dev/fd		fdescfs     rw	    0	    0
+proc		/proc		procfs	    rw	    0	    0
+linprocfs	   /compat/linux/proc  linprocfs   rw      0       0
+#tmpfs    /tmp  tmpfs   rw,mode=1777    0       0
+#tmpfs    /compat/linux/dev/shm  tmpfs   rw,mode=1777    0       0
+linsysfs	   /compat/linux/sys   linsysfs    rw      0       0
+# for Windows	############### ########### ####### #######  ################
+#/dev/ada0s17    /media/fat32    msdosfs	    rw	    0       0
+#/dev/ada0s15    /media/winxp    ntfs rw,mountprog=/usr/local/bin/ntfs-3g 0 0
+#/dev/ada1s2a     /mnt/hd04    ntfs rw,mountprog=/usr/local/bin/ntfs-3g 0 0
+# for Linux	############### ########### ####### #######  ################
+#/dev/ada0s18 /media/linuxhome   ext2fs	    ro	    0	    0
+#/dev/ada0s7	/media/linux1   ext2fs	    ro	    0	    0
+#/dev/ada0s8	/media/linux2	ext2fs	    ro	    0	    0    
+#/dev/ada0s9	/media/linux3	ext2fs	    ro	    0	    0
+#/dev/ada0s10	/media/linux4	ext2fs	    ro	    0	    0
+#/dev/ada0s11	/media/linux5	ext2fs	    ro	    0	    0
+#/dev/ada0s12	/media/linux6	ext2fs	    ro	    0	    0
+#/dev/ada0s13	/media/linux7	ext2fs	    ro	    0	    0
+#/dev/ada0s14	/media/linux8	ext2fs	    ro	    0	    0
+#/dev/ada0s16	/media/linux9	ext2fs	    ro	    0	    0
