@@ -1,0 +1,16 @@
+# Put your custom commands here that should be executed once
+# the system init finished. By default this file does nothing.
+#python2.7 /root/XXMini/proxy.py >/dev/null 2>&1 &
+#/bin/xxmini.sh
+/bin/tar -C /tmp/ -xzvf /root/adbyby.tar.gz
+/bin/chmod +x /tmp/adbyby/show-state
+/bin/chmod +x /tmp/adbyby/stop-adbyby
+/bin/chmod +x /tmp/adbyby/start-adbyby
+/etc/init.d/adbyby start
+sleep 15
+/etc/init.d/dnscrypt-proxy start
+sleep 15
+/etc/init.d/ddns stop
+/etc/init.d/ddns start
+
+exit 0

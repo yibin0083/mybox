@@ -1,0 +1,37 @@
+
+config wifi-device 'radio0'
+	option type 'mac80211'
+	option hwmode '11g'
+	option path 'pci0000:00/0000:00:11.0'
+	option htmode 'HT40'
+	option channel '6'
+	option txpower '30'
+	option noscan '1'
+	option country '00'
+
+config wifi-iface
+	option device 'radio0'
+	option network 'lan'
+	option mode 'ap'
+	option ssid 'OpenWrt0083'
+	option key '13976320083'
+	option encryption 'psk-mixed+ccmp'
+
+config wifi-device 'radio1'
+	option type 'mac80211'
+	option channel '157'
+	option hwmode '11a'
+	option path 'pci0000:00/0000:00:12.0'
+	option txpower '30'
+	option htmode 'HT40'
+	option noscan '1'
+	option country '00'
+
+config wifi-iface
+	option device 'radio1'
+	option network 'lan'
+	option mode 'ap'
+	option ssid '5G'
+	option key '13976320083'
+	option encryption 'psk-mixed+ccmp'
+
