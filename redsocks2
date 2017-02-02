@@ -1,0 +1,45 @@
+
+config redsocks2_base
+	option loglevel 'info'
+	option enabled '1'
+
+config redsocks2_redirect
+	option local_ip '0.0.0.0'
+	option local_port '11111'
+	option proxy_type 'shadowsocks'
+	option autoproxy '1'
+	option timeout '3'
+	option enc_type 'aes-256-cfb'
+	option ip '104.160.173.67'
+	option port '9999'
+	option password 'ntdtv.com'
+
+config redsocks2_autoproxy
+	option no_quick_check_seconds '300'
+	option quick_connect_timeout '2'
+
+config redsocks2_ipcache
+	option cache_size '4'
+	option cache_file '/tmp/redsocks2_ipcache.txt'
+	option stale_time '7200'
+	option autosave_interval '3600'
+	option port_check '0'
+
+config redsocks2_udprelay
+	option local_ip '0.0.0.0'
+	option local_port '1153'
+	option proxy_type 'shadowsocks'
+	option udp_timeout '3'
+	option dest_port '53'
+	option enc_type 'aes-256-cfb'
+	option password 'ntdtv.com'
+	option dest_ip '8.8.8.8'
+	option ip '104.160.173.67'
+	option port '9999'
+
+config redsocks2_iptables
+	option blacklist_enabled '0'
+	option whitelist_enabled '1'
+	option ipset_whitelist '/etc/chnroute.txt'
+	option dest_port '11111'
+
