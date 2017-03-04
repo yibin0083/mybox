@@ -3,7 +3,7 @@
 
 
 127.0.0.1	localhost
-::1	localhost ip6-localhost ip6-loopback
+
 219.76.4.3	www.google.com
 219.76.4.3	google.com
 219.76.4.3	gcr.io
