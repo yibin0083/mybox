@@ -1,17 +1,6 @@
-@direct/1os
-#ios
-255.255.255.255	broadcasthost
-::1             localhost
-#common
 127.0.0.1 localhost
-#android
-::1             ip6-localhost
-#miwifi
-127.0.0.1 XiaoQiang
-@direct/official
-#pcbeta
 218.93.127.136 cdn.pcbeta.attachment.inimc.com
-218.93.127.136 cdn.pcbeta.css.inimc.com
+218.93.127.136 cdn.pcbeta.css.inimc
 218.93.127.136 cdn.pcbeta.img.inimc.com
 218.93.127.136 cdn.pcbeta.js.inimc.com
 218.93.127.136 cdn.pcbeta.static.inimc.com
